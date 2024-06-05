@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from "@/app/components/Image/Image";
+import Image from "@/app/components/Image";
 import './styles.css';
 import {ROOT_CONSTANTS} from "@/app/constants/root";
-import NavigationBar from "@/app/components/NavigationBar/NavigationBar";
+import NavigationBar from "@/app/components/NavigationBar";
 import {PAGES_CONFIG} from "@/app/constants/pagesConfig";
+import MobileNavigationBar from "@/app/components/MobileNavigationBar";
 
 const Header = () => {
     return (
@@ -15,7 +16,7 @@ const Header = () => {
 
             <NavigationBar />
 
-            <div className='header-contacts-container'>
+            <div className='header-contacts-container header-contacts-desktop'>
                 <div className='phone-wrapper'>
                     <span>
                         <Link

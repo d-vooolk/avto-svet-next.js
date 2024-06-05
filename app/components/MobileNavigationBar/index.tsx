@@ -5,17 +5,17 @@ import Link from "next/link";
 import React from "react";
 import './styles.css';
 
-const NavigationBar = () => {
+const MobileNavigationBar = () => {
     return (
         <nav>
-            <ul className="nav-list">
+            <ul className="nav-list mobile">
                 {
                     NAVIGATION_PROVIDERS.map((navItem) => (
                         <li>
                             <Link
                                 href={navItem.path}
                                 className='animation-link'
-                                onMouseEnter={() => {
+                                onClick={() => {
                                     if (navItem.children.length > 0) {
                                         console.log(navItem.children[0].name);
                                     }
@@ -30,5 +30,4 @@ const NavigationBar = () => {
         </nav>
     )
 }
-
-export default NavigationBar;
+export default MobileNavigationBar;

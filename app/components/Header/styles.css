@@ -1,7 +1,7 @@
 header {
     display: flex;
     background-color: var(--header-background);
-    padding: 0 5em;
+    padding: 0.5em 5em;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -32,4 +32,14 @@ header {
 
 .instagram-link:hover::after {
     text-decoration: none !important;
+}
+
+@media (min-width: 340px) and (max-width: 768px) {
+    header {
+        padding: 0.5em 1em;
+    }
+
+    .header-contacts-desktop {
+        display: none;
+    }
 }

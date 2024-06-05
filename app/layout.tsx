@@ -2,7 +2,7 @@ import type {Metadata} from "next";
 import {Wix_Madefor_Display} from "next/font/google";
 import "./globals.css";
 import React from "react";
-import Header from "@/app/components/Header/Header";
+import Header from "@/app/components/Header";
 
 export const metadata: Metadata = {
     title: "Create Next App",
