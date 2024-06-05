@@ -1,11 +1,10 @@
-'use client'
-
 import React from 'react';
 import Link from 'next/link';
 import Image from "@/app/components/Image/Image";
 import './styles.css';
 import {ROOT_CONSTANTS} from "@/app/constants/root";
 import NavigationBar from "@/app/components/NavigationBar/NavigationBar";
+import {PAGES_CONFIG} from "@/app/constants/pagesConfig";
 
 const Header = () => {
     return (
@@ -23,8 +22,8 @@ const Header = () => {
                 </div>
                 <div className='instagram-container'>
                     <Link
-                        href='https://www.instagram.com/avto_svet_by/'
-                        target='_blank noopener noreferer'
+                        href={ROOT_CONSTANTS.INSTAGRAM_LINK}
+                        target={PAGES_CONFIG.images.target.blankNoopener}
                     >
                         <Image
                             src='/img/social/inst-black.png'
