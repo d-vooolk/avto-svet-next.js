@@ -20,8 +20,8 @@ const NavigationBar = () => {
             </div>
             <ul className={`nav-list ${!isOpenMenu && 'hide'}`}>
                 {
-                    NAVIGATION_PROVIDERS.map((navItem) => (
-                        <li>
+                    NAVIGATION_PROVIDERS.map((navItem, index) => (
+                        <li key={`${navItem.name}-${navItem.path}-${index}`}>
                             <Link
                                 href={navItem.path}
                                 className='animation-link'

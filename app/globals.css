@@ -1,6 +1,8 @@
 :root {
     --color-dark: #000000;
 
+    --color-light-1: rgba(255, 255, 255, 0.86);
+
     --header-background: none;
 }
 
