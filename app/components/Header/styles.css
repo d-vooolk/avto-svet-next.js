@@ -1,0 +1,11 @@
+header {
+    display: flex;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+.instagram-container img {
+    width: 30px;
+}
