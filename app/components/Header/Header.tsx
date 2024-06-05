@@ -15,15 +15,30 @@ const Header = () => {
 
             <NavigationBar />
 
-            <div>
-                <div>
-                    <span>{ROOT_CONSTANTS.ARTEM_PHONE_NUMBER}</span>
-                    <span>{ROOT_CONSTANTS.DIMA_PHONE_NUMBER}</span>
+            <div className='header-contacts-container'>
+                <div className='phone-wrapper'>
+                    <span>
+                        <Link
+                            href={`tel:${ROOT_CONSTANTS.ARTEM_PHONE_NUMBER}`}
+                            className='animation-link'
+                        >
+                            {ROOT_CONSTANTS.ARTEM_PHONE_NUMBER}
+                        </Link>
+                    </span>
+                    <span>
+                        <Link
+                            href={`tel:${ROOT_CONSTANTS.DIMA_PHONE_NUMBER}`}
+                            className='animation-link'
+                        >
+                            {ROOT_CONSTANTS.DIMA_PHONE_NUMBER}
+                        </Link>
+                    </span>
                 </div>
                 <div className='instagram-container'>
                     <Link
                         href={ROOT_CONSTANTS.INSTAGRAM_LINK}
                         target={PAGES_CONFIG.images.target.blankNoopener}
+                        className='instagram-link'
                     >
                         <Image
                             src='/img/social/inst-black.png'

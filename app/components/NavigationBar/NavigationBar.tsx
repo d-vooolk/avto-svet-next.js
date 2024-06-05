@@ -3,19 +3,21 @@
 import {NAVIGATION_PROVIDERS} from "@/app/constants/navigation";
 import Link from "next/link";
 import React from "react";
+import './styles.css';
 
 const NavigationBar = () => {
     return (
         <nav>
-            <ul>
+            <ul className="nav-list">
                 {
                     NAVIGATION_PROVIDERS.map((navItem) => (
                         <li>
                             <Link
                                 href={navItem.path}
+                                className='animation-link'
                                 onMouseEnter={() => {
                                     if (navItem.children.length > 0) {
-                                        alert(navItem.children[0].name);
+                                        console.log(navItem.children[0].name);
                                     }
                                 }}
                             >

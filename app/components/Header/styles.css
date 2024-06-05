@@ -1,11 +1,30 @@
 header {
     display: flex;
+    background-color: var(--header-background);
+    padding: 0 5em;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container img {
-    width: 100px;
+    width: 5em;
 }
 
 .instagram-container img {
     width: 30px;
+}
+
+.header-contacts-container {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.phone-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram-link:hover::after {
+    text-decoration: none !important;
 }
