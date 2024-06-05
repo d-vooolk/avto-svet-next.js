@@ -4,10 +4,15 @@ header {
     padding: 0 5em;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .logo-container img {
     width: 5em;
+    border-radius: 50%;
 }
 
 .instagram-container img {
